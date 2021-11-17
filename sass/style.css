@@ -1,0 +1,12 @@
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,12 @@
+{
+  "name": "foxcargo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch sass/style.scss sass/style.css",
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}
