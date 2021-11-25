@@ -1,0 +1,18 @@
+html {
+	font-size: 10px;
+}
+
+body {
+	font-size: 1.6rem;
+	@extend %font-pri;
+	@include font ($weight: normal, $size: 1.6rem, $height: 2.6rem);
+	background-color: $color-background-light;
+}
+
+h1 {
+	@include font ($weight: 700, $size: 5.6rem, $height: 7.9rem);
+}
+
+h2 {
+	@include font ($weight: 300, $size: 5.6rem, $height: 7.9rem);
+}

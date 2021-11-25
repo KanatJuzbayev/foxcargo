@@ -1,0 +1,24 @@
+.navigation {
+  display: flex;
+}
+
+.navigation__link {
+  list-style: none;
+  padding: 28px 35px;
+  @include font($style: normal, $weight: bold, $size: 2.2rem, $height: 2.9rems);
+  @extend %transition;
+  letter-spacing: 0.005em;
+  color: $color-text;
+  cursor: pointer;
+  opacity: 0.9;
+  &:hover {
+    color: $color-element;
+  }
+}
+
+.active {
+  background: #F9F9F9;
+  box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(0, 0, 0, 0.09);
+  border-radius: 15px;
+  color: $color-element;
+}

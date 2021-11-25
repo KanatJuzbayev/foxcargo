@@ -1,5 +1,35 @@
+.header {
+  background: $color-background-light;
+  padding: 14px 0 17px 0;
+}
+
 .header__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header__buttons {
+  display: flex;
+}
+
+.header__contacts {
+  display: grid;
+}
+
+.contact__link {
+  padding: 5px 5px;
+  @include font($style: normal, $weight: bold, $size: 2rem, $height: 2.7rems);
+  @extend %transition;
+  letter-spacing: 0.01em;
+  color: $color-text;
+  cursor: pointer;
+  opacity: 0.9;
+  &:hover {
+    color: $color-element;
+  }
+
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
 }

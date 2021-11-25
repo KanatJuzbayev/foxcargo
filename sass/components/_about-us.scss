@@ -1,0 +1,31 @@
+.about-us {
+  width: 1920px;
+  background-image: url(../assets/image/background-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1920px auto;
+}
+
+.about-us__wrapper {
+  width: 960px;
+  display: inline-flex;
+  background: rgba(31, 31, 31, 0.85);
+}
+
+.about-us__content {
+  margin: 35px 90px 60px;
+  color: #FFFFFF;
+}
+
+.about-us__title {
+  @include font ($weight: 300, $size: 5.6rem, $height: 7.9rem);
+}
+
+.content__title {
+  @include font ($weight: 300, $size: 3.5rem, $height: 6.4rem);
+}
+
+.about-us__text {
+  @include font ($weight: normal, $size: 2.2rem, $height: 3.3rem);
+  text-align: justify;
+}

@@ -1,8 +1,26 @@
 //abstract
-@import 'abstract/constans.scss';
+@import
+'abstract/constans.scss',
+'abstract/placeholders',
+'abstract/mixins';
+
+//base
+@import
+  'base/logo',
+  'base/base',
+  'base/normalize',
+  'base/buttons',
+  'base/icons';
+
+//components
+@import
+  'components/navigation',
+  'components/promo',
+  'components/we-do',
+  'components/about-us';
 
 //layouts
 @import
-'layouts/wrapper',
-'layouts/header'
-;
+  'layouts/columns',
+  'layouts/wrapper',
+  'layouts/header';

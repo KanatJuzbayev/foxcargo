@@ -1,0 +1,41 @@
+.we-do__wrapper {
+  padding: 40px 0 80px;
+}
+
+.we-do__elements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  >* {
+    flex-basis: 30%;
+  }
+}
+
+.service {
+  max-width: 446px;
+  padding: 35px 37px;
+  justify-content: center;
+  background: #F3F3F3;
+  box-shadow: -20px -20px 50px #FFFFFF, 20px 20px 50px #D2D2D2;
+  border-radius: 43px;
+  &:hover {
+    background-color: #d3f3f2;
+    border: 3px solid  #d3f3f2;
+  }
+}
+
+.we-do-object {
+  margin: auto;
+  display: block;
+}
+
+.service__title {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.service__text {
+  @include font($weight: 600, $size: 2.6rem, $height: 4.3rem);
+  text-align: center;
+}

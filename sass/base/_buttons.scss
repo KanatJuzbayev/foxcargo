@@ -1,0 +1,19 @@
+.button {
+  @extend %font-add;
+  @include font($style: normal, $weight: bold, $size: 2.6rem, $height: 3.5rem);
+  @extend %transition;
+  padding: 28px 35px;
+  cursor: pointer;
+  color: #12B7B6;
+}
+
+.promo__button {
+  background: #F9F9F9;
+  box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  border-width: inherit;
+  &:hover {
+    // color: $color-logo;
+    background-color: #d3f3f2;
+  }
+}
