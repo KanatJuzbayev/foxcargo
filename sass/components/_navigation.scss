@@ -8,7 +8,7 @@
   @include font($style: normal, $weight: bold, $size: 2.2rem, $height: 2.9rems);
   @extend %transition;
   letter-spacing: 0.005em;
-  color: $color-text;
+  color: $color-light;
   cursor: pointer;
   opacity: 0.9;
   &:hover {
@@ -17,8 +17,8 @@
 }
 
 .active {
-  background: #F9F9F9;
-  box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(0, 0, 0, 0.09);
+  background: $color-background-dark;
+  box-shadow: -10px -10px 30px #2B2B2B, 10px 10px 30px rgba(0, 0, 0, 0.45);
   border-radius: 15px;
   color: $color-element;
 }

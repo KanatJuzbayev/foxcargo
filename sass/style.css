@@ -22,7 +22,7 @@ body {
   cursor: pointer;
 }
 .logo-svg:hover .logo-path {
-  fill: #395ca3;
+  fill: #f3f3f3;
 }
 
 html {
@@ -522,7 +522,7 @@ ul {
   font-size: 2.2rem;
   line-height: 2.9rems;
   letter-spacing: 0.005em;
-  color: #545454;
+  color: #f3f3f3;
   cursor: pointer;
   opacity: 0.9;
 }
@@ -531,8 +531,8 @@ ul {
 }
 
 .active {
-  background: #F9F9F9;
-  box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(0, 0, 0, 0.09);
+  background: #2D2D2D;
+  box-shadow: -10px -10px 30px #2B2B2B, 10px 10px 30px rgba(0, 0, 0, 0.45);
   border-radius: 15px;
   color: #12B7B6;
 }
@@ -596,7 +596,7 @@ ul {
 }
 .service:hover {
   background-color: #d3f3f2;
-  border: 3px solid #d3f3f2;
+  border: 1px solid #d3f3f2;
 }
 
 .we-do-object {
@@ -619,6 +619,7 @@ ul {
 }
 
 .about-us {
+  margin: auto;
   width: 1920px;
   background-image: url(../assets/image/background-2.jpg);
   background-position: center;
@@ -692,7 +693,7 @@ ul {
 }
 
 .header {
-  background: #f3f3f3;
+  background: #2D2D2D;
   padding: 14px 0 17px 0;
 }
 
@@ -717,7 +718,7 @@ ul {
   font-size: 2rem;
   line-height: 2.7rems;
   letter-spacing: 0.01em;
-  color: #545454;
+  color: #f3f3f3;
   cursor: pointer;
   opacity: 0.9;
   text-decoration: none;

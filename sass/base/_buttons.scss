@@ -12,8 +12,7 @@
   box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(0, 0, 0, 0.08);
   border-radius: 20px;
   border-width: inherit;
-  &:hover {
-    // color: $color-logo;
-    background-color: #d3f3f2;
-  }
+    &:hover {
+      background-color: #d3f3f2;
+    }
 }
