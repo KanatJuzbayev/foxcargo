@@ -634,11 +634,18 @@ ul {
 }
 
 .about-us__content {
-  margin: 35px 90px 60px;
+  padding: 60px 90px 60px;
   color: #FFFFFF;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  text-align: justify;
+  height: 1200px;
 }
 
 .about-us__title {
+  margin: 0 0 50px 0;
   font-style: normal;
   font-weight: 300;
   font-size: 5.6rem;
@@ -652,12 +659,45 @@ ul {
   line-height: 6.4rem;
 }
 
-.about-us__text {
+.select__wrapper {
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.about-us__select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.select__titlte {
+  display: flex;
+}
+
+.select__dots {
+  margin-right: 47px;
+}
+
+.select__arrow {
+  height: 20px;
+  width: 20px;
+  background-image: url(../assets/image/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.select__text {
   font-style: normal;
   font-weight: normal;
-  font-size: 2.2rem;
-  line-height: 3.3rem;
-  text-align: justify;
+  font-size: 1.8rem;
+  line-height: 2.9rem;
+  display: none;
+}
+
+.select__active {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .layout-4-column {
@@ -719,6 +759,7 @@ ul {
   line-height: 2.7rems;
   letter-spacing: 0.01em;
   color: #f3f3f3;
+  letter-spacing: 0.05em;
   cursor: pointer;
   opacity: 0.9;
   text-decoration: none;

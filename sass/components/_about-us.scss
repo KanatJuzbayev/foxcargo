@@ -14,11 +14,15 @@
 }
 
 .about-us__content {
-  margin: 35px 90px 60px;
+  padding: 60px 90px 60px;
   color: #FFFFFF;
+  @include font ($weight: normal, $size: 2.2rem, $height: 3.3rem);
+  text-align: justify;
+  height: 1200px;
 }
 
 .about-us__title {
+  margin: 0 0 50px 0;
   @include font ($weight: 300, $size: 5.6rem, $height: 7.9rem);
 }
 
@@ -26,7 +30,42 @@
   @include font ($weight: 300, $size: 3.5rem, $height: 6.4rem);
 }
 
-.about-us__text {
-  @include font ($weight: normal, $size: 2.2rem, $height: 3.3rem);
-  text-align: justify;
+.select__wrapper {
+  border-bottom: 1px solid $color-light;
+}
+
+.about-us__select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 30px 0;
+}
+
+.select__titlte {
+  display: flex;
+}
+
+.select__dots {
+  margin-right: 47px;
+}
+
+.select__arrow {
+  height: 20px;
+  width: 20px;
+  background-image: url(../assets/image/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.select__text {
+  @include font ($weight: normal, $size: 1.8rem, $height: 2.9rem);
+  display: none;
+}
+
+.select__active {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 40px;
 }

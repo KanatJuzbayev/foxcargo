@@ -23,6 +23,7 @@
   @extend %transition;
   letter-spacing: 0.01em;
   color: $color-light;
+  letter-spacing: 0.05em;
   cursor: pointer;
   opacity: 0.9;
   &:hover {
