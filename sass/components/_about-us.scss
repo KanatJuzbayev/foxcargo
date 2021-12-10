@@ -14,16 +14,11 @@
 }
 
 .about-us__content {
-  padding: 60px 90px 60px;
+  padding: 120px 90px 60px;
   color: #FFFFFF;
   @include font ($weight: normal, $size: 2.2rem, $height: 3.3rem);
   text-align: justify;
   height: 1200px;
-}
-
-.about-us__title {
-  margin: 0 0 50px 0;
-  @include font ($weight: 300, $size: 5.6rem, $height: 7.9rem);
 }
 
 .content__title {
@@ -62,6 +57,7 @@
 .select__text {
   @include font ($weight: normal, $size: 1.8rem, $height: 2.9rem);
   display: none;
+  @extend %transition;
 }
 
 .select__active {

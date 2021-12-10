@@ -1,11 +1,11 @@
 .promo {
   background: $color-light;
+  padding: 120px 0 60px;
 }
 
 .promo__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 50px 0 60px;
 }
 
 .promo__content {
@@ -29,5 +29,4 @@
 
 .promo__button {
   margin: 50px 0 0 60px;
-
 }

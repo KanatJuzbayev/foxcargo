@@ -1,16 +1,18 @@
 .navigation {
   display: flex;
+  align-items: center;
 }
 
-.navigation__link {
+.section__link {
   list-style: none;
-  padding: 28px 35px;
+  padding: 18px 25px;
   @include font($style: normal, $weight: bold, $size: 2.2rem, $height: 2.9rems);
   @extend %transition;
   letter-spacing: 0.005em;
   color: $color-light;
   cursor: pointer;
   opacity: 0.9;
+  text-decoration: none;
   &:hover {
     color: $color-element;
   }

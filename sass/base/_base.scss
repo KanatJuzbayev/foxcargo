@@ -7,6 +7,7 @@ body {
 	@extend %font-pri;
 	@include font ($weight: normal, $size: 1.6rem, $height: 2.6rem);
 	background-color: $color-light;
+	overflow-x:hidden;
 }
 
 h1 {
@@ -15,4 +16,9 @@ h1 {
 
 h2 {
 	@include font ($weight: 300, $size: 5.6rem, $height: 7.9rem);
+}
+
+.section__title {
+  margin: 0 0 50px 0;
+  @include font ($weight: 300, $size: 5.6rem, $height: 7.9rem);
 }

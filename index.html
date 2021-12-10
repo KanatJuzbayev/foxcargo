@@ -15,17 +15,17 @@
 <body>
   <header class="header">
     <div class="wrapper header__wrapper">
-      <a class="logo" href="#">
+      <a class="logo header__logo" href="#">
         <object type="image/svg+xml" data="assets/image/logo.svg" class="logo-object">
           Your browser does not support SVG
         </object>
       </a>
       <nav class="hearder__navigation">
         <ul class="navigation">
-          <li class="navigation__link active">Главная</li>
-          <li class="navigation__link">О нас</li>
-          <li class="navigation__link">Схема работы</li>
-          <li class="navigation__link">Контакты</li>
+          <li ><a class="section__link active" href="#promo">Главная</a></li>
+          <li ><a class="section__link" href="#about-us">О нас</a></li>
+          <li ><a class="section__link" href="#work-scheme">Схема работы</a></li>
+          <li ><a class="section__link" href="#contacts">Контакты</a></li>
         </ul>
       </nav>
       <div class="header__buttons">
@@ -44,7 +44,7 @@
     </div>
   </header>
 
-  <section class="promo">
+  <section id="promo" class="promo">
     <div class="wrapper promo__wrapper">
       <div class="promo__content">
         <h1 class="promo__title">Фокс Карго</h1>
@@ -93,10 +93,10 @@
     </div>
   </section>
 
-  <section class="about-us">
+  <section id="about-us" class="about-us">
     <div class="wrapper about-us__wrapper">
       <div class="about-us__content">
-        <h2 class="about-us__title">О нас</h2>
+        <h2 class="section__title">О нас</h2>
         <h2 class="content__title">Ключевые моменты о компании</h2>
         <p>Фокс Карго является молодой, быстроразвивающейся и амбициозной компанией нового формата.</p>
 
@@ -138,33 +138,17 @@
     </div>
   </section>
 
-
-  <section class="work-scheme">
+  <section id="work-scheme" class="work-scheme">
     <div class="wrapper work-scheme__wrapper">
-      <a class="work-scheme__link" href="#">
-        <span class="work-scheme__ico"></span>
-        <span class="work-scheme__text">1. Расчет ставки. Отправить заявку.</span>
-      </a>
-      <a class="work-scheme__link" href="#">
-        <span class="work-scheme__ico"></span>
-        <span class="work-scheme__text">2. Заключение договора (Скачать шаблон)</span>
-      </a>
-      <a class="work-scheme__link" href="#">
-        <span class="work-scheme__ico"></span>
-        <span class="work-scheme__text">3. Оплата оговоренных сборов</span>
-      </a>
-      <a class="work-scheme__link" href="#">
-        <span class="work-scheme__ico"></span>
-        <span class="work-scheme__text">4. Подача и отправка вагонов</span>
-      </a>
-      <a class="work-scheme__link" href="#">
-        <span class="work-scheme__ico"></span>
-        <span class="work-scheme__text">5. Выдача документов о перевозке</span>
-      </a>
+      <h2 class="section__title scheme__title">Схема работы</h2>
+      <p>Активная связь и поддержка на каждом этапе работы</p>
+      <object type="image/svg+xml" data="assets/image/scheme/scheme.svg" class="work-scheme-object">
+        Your browser does not support SVG
+      </object>
     </div>
   </section>
 
-  <section class="contacts">
+  <section id="contacts" class="contacts">
     <div class="wrapper contacts__wrapper">
       <div class="layout-2-colum">
         <div class="contacts__content">
@@ -212,5 +196,6 @@
   </footer>
 
   <script src="./src/about-us.js"></script>
+  <script src="./src/navigation.js"></script>
 </body>
 </html>

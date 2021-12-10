@@ -1,0 +1,22 @@
+.work-scheme__wrapper {
+  padding: 120px 0 150px;
+  color: $color-background-dark;
+  @include font ($weight: normal, $size: 2.2rem, $height: 3.3rem);
+  text-align: justify;
+}
+
+.scheme__elements {
+  display: flex;
+  align-items: baseline;
+}
+
+.scheme__title {
+ margin-bottom: 40px;
+}
+
+.work-scheme-object {
+  display: block;
+  margin: auto;
+  margin-top: 110px;
+  width: 1200px;
+}

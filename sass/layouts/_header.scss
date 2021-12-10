@@ -1,4 +1,8 @@
 .header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 2;
   background: $color-background-dark;
   padding: 14px 0 17px 0;
 }
@@ -18,7 +22,6 @@
 }
 
 .contact__link {
-  padding: 5px 5px;
   @include font($style: normal, $weight: bold, $size: 2rem, $height: 2.7rems);
   @extend %transition;
   letter-spacing: 0.01em;
