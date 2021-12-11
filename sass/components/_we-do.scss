@@ -18,20 +18,21 @@
   background: #F3F3F3;
   box-shadow: -20px -20px 50px #FFFFFF, 20px 20px 50px #D2D2D2;
   border-radius: 43px;
+  @extend %transition;
   &:hover {
     background-color: #d3f3f2;
-    border: 1px solid  #d3f3f2;
+    // border: 1px solid  #d3f3f2;
   }
 }
 
 .we-do-object {
+  height: 180px;
   margin: auto;
   display: block;
 }
 
 .service__title {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 35px auto;
   text-align: center;
 }
 

@@ -1,6 +1,6 @@
 .work-scheme__wrapper {
   padding: 120px 0 150px;
-  color: $color-background-dark;
+  color: $color-dark;
   @include font ($weight: normal, $size: 2.2rem, $height: 3.3rem);
   text-align: justify;
 }
@@ -14,9 +14,22 @@
  margin-bottom: 40px;
 }
 
-.work-scheme-object {
+.scheme-object {
   display: block;
   margin: auto;
   margin-top: 110px;
   width: 1200px;
+
+}
+
+.scheme-rect {
+  @extend %transition;
+}
+
+.scheme-svg {
+  .scheme-rect {
+    &:hover {
+      fill: #d3f3f2;
+    }
+  }
 }

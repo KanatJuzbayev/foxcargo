@@ -9,14 +9,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link rel="icon" href="assets/image/favicon.svg">
+  <link rel="icon" href="assets/svg/favicon.svg">
   <title>Fox Сargo</title>
 </head>
 <body>
   <header class="header">
     <div class="wrapper header__wrapper">
       <a class="logo header__logo" href="#">
-        <object type="image/svg+xml" data="assets/image/logo.svg" class="logo-object">
+        <object type="image/svg+xml" data="assets/svg/logo/logo.svg" class="logo-object">
           Your browser does not support SVG
         </object>
       </a>
@@ -61,7 +61,7 @@
     <div class="wrapper we-do__wrapper">
       <div class="we-do__elements">
         <div class="service">
-          <object type="image/svg+xml" data="assets/image/group1.svg" class="we-do-object">
+          <object type="image/svg+xml" data="assets/svg/group1.svg" class="we-do-object">
             Your browser does not support SVG
           </object>
           <h2 class="service__title">Подвижной состав</h2>
@@ -71,7 +71,7 @@
           </p>
         </div>
         <div class="service">
-          <object type="image/svg+xml" data="assets/image/group3.svg" class="we-do-object">
+          <object type="image/svg+xml" data="assets/svg/group3.svg" class="we-do-object">
             Your browser does not support SVG
           </object>
           <h2 class="service__title">ЖД сборы</h2>
@@ -80,7 +80,7 @@
           </p>
         </div>
         <div class="service">
-          <object type="image/svg+xml" data="assets/image/group2.svg" class="we-do-object">
+          <object type="image/svg+xml" data="assets/svg/group2.svg" class="we-do-object">
             Your browser does not support SVG
           </object>
           <h2 class="service__title">Грузы</h2>
@@ -103,7 +103,7 @@
         <div class="select__wrapper">
           <div class="about-us__select">
             <div class="select__titlte">
-              <img class="select__dots" src="assets/image/dots.svg" alt="img-dots">
+              <img class="select__dots" src="assets/svg/dots.svg" alt="img-dots">
               <p class="history__title">История</p>
             </div>
             <div data-key="0" class="select__arrow"></div>
@@ -114,7 +114,7 @@
         <div class="select__wrapper">
           <div class="about-us__select">
             <div class="select__titlte">
-              <img class="select__dots" src="assets/image/dots.svg" alt="img-dots">
+              <img class="select__dots" src="assets/svg/dots.svg" alt="img-dots">
               <p class="professionalism__title">Профессионализм</p>
             </div>
             <div data-key="1" class="select__arrow"></div>
@@ -125,7 +125,7 @@
         <div class="select__wrapper">
           <div class="about-us__select">
             <div class="select__titlte">
-              <img class="select__dots" src="assets/image/dots.svg" alt="img-dots">
+              <img class="select__dots" src="assets/svg/dots.svg" alt="img-dots">
               <p class="goals__titile">Задачи</p>
             </div>
             <div data-key="2" class="select__arrow"></div>
@@ -142,7 +142,7 @@
     <div class="wrapper work-scheme__wrapper">
       <h2 class="section__title scheme__title">Схема работы</h2>
       <p>Активная связь и поддержка на каждом этапе работы</p>
-      <object type="image/svg+xml" data="assets/image/scheme/scheme.svg" class="work-scheme-object">
+      <object type="image/svg+xml" data="assets/svg/scheme.svg" class="scheme-object">
         Your browser does not support SVG
       </object>
     </div>
@@ -150,15 +150,22 @@
 
   <section id="contacts" class="contacts">
     <div class="wrapper contacts__wrapper">
-      <div class="layout-2-colum">
+      <div class="layout-2-column">
         <div class="contacts__content">
-          <p class="contacts__title">ТОО Фокс Карго</p>
-          <div class="contact__info">
-            <p>адрес: 161300 Казахстан, Туркестанская обл., г. Шымкент, ул. Биназар Батыр 193А</p>
-            <p><a href="tel:+77273270007">тел: +7 727 327 0007</a></p>
-            <p><a href="tel:+77079009392">моб: +7 707 900 9392</a></p>
-            <p><a href="mailto:info@foxcargo.kz">mail: info@foxcargo.kz </a><a href="mailto:logistic.specialist@foxcargo.kz">logistic.specialist@foxcargo.kz</a></p>
+          <p class="section__title">ТОО Фокс Карго</p>
+          <div class="contacts-info">
+            <p>Адрес: 161300 Казахстан, Туркестанская обл., <br>г. Шымкент, ул. Биназар Батыр 193А</p>
+            <p>тел: <a class="contacts-info__link"  href="tel:+77273270007">+ 7 727 327 0007</a></p>
+            <p>моб: <a class="contacts-info__link" href="tel:+77079009392">+ 7 707 900 9392</a></p>
+            <p>mail: <a class="contacts-info__link" href="mailto:info@foxcargo.kz">info@foxcargo.kz ,</a><a class="contacts-info__link" href="mailto:logistic.specialist@foxcargo.kz"> logistic.specialist@foxcargo.kz</a></p>
           </div>
+          <form action="index.html" method="post">
+            <input class="form__input" type="text" name="name" placeholder="Имя">
+            <input class="form__input" type="email" name="email" placeholder="Ваш email">
+            <div class="contact-us__button">
+              <button class="button contacts__button" type="submit">Связаться с нами  → </button>
+            </div>
+          </form>
         </div>
 
         <iframe src="https://api.mapbox.com/styles/v1/kanat-juzbayev/cku85gpaf4u9i17s9rjkk6flf.html?title=false&access_token=pk.eyJ1Ijoia2FuYXQtanV6YmF5ZXYiLCJhIjoiY2t1ODQ2cnA2MDRlbDJubXp5dzl6cXpxeiJ9.G6bJAkTgPyPKrQvpon-jzQ&zoomwheel=false#15.94/48.86091/2.3364" title="Monochrome" style="border:none;"></iframe>
@@ -168,30 +175,34 @@
 
   <footer class="footer">
     <div class="wrapper footer__wrapper">
-      <a class="logo" href="#"></a>
+      <a class="logo footer__logo" href="#promo">
+        <object type="image/svg+xml" data="assets/svg/logo/logo-light.svg" class="logo-object footer__logo-object">
+          Your browser does not support SVG
+        </object>
+      </a>
       <div class="layout-2-column footer__navigation">
         <div class="navigation__column first">
           <ul class="footer__navigation_links">
-            <li><a href="#promo">Главная</a></li>
-            <li><a href="#about-us">О нас</a></li>
+            <li><a class="footer__link" href="#promo">Главная</a></li>
+            <li><a class="footer__link" href="#about-us">О нас</a></li>
           </ul>
         </div>
         <div class="navigation__column second">
           <ul class="footer__navigation_links">
-            <li><a href="#scheme">Схема работы</a></li>
-            <li><a href="#contacts">Контакты</a></li>
+            <li><a class="footer__link" href="#work-scheme">Схема работы</a></li>
+            <li><a class="footer__link" href="#contacts">Контакты</a></li>
           </ul>
         </div>
       </div>
-      <div class="social__media">
-        <a class="social__media__link instagram" href="https://www.instagram.com/museelouvre/" target="_blank"></a>
-        <a class="social__media__link facebook" href="https://www.facebook.com/museedulouvre" target="_blank"></a>
+      <div class="social-media">
+        <a class="social-media__link instagram" href="https://www.instagram.com/" target="_blank"></a>
+        <a class="social-media__link facebook" href="https://www.facebook.com/" target="_blank"></a>
+        <a class="social-media__link twitter" href="http://twitter.com/" target="_blank"></a>
       </div>
-      <span class="line additional"></span>
-      <div class="wrapper creates__wrapper">
-        <p class="creates">© 2021</p>
-        <a class="creator" target="_blank" href="#"><p class="creates">Masahiro Co</p></a>
-      </div>
+    </div>
+    <div class="wrapper creates__wrapper">
+      <p class="creates">© 2021</p>
+      <a class="creator" target="_blank" href="#"><p class="creates">Masahiro Co</p></a>
     </div>
   </footer>
 

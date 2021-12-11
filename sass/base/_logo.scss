@@ -18,3 +18,12 @@
     }
   }
 }
+
+.logo-svg-light {
+  cursor: pointer;
+  &:hover {
+    .logo-path {
+      fill: $color-element;
+    }
+  }
+}
