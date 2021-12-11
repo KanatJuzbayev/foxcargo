@@ -29,6 +29,7 @@
 .footer__link {
   display: block;
   @include font ($weight: normal, $size: 1.8rem, $height: 2.9rem);
+  @extend %transition;
   text-decoration: none;
   color: $color-light;
   margin-bottom: 10px;
@@ -52,6 +53,7 @@
   width: 30px;
   background-position: center;
   background-repeat: no-repeat;
+  @extend %transition;
 }
 
 .instagram {
@@ -75,7 +77,6 @@
   }
 }
 
-
 .creates__wrapper {
   color: $color-light;
   display: flex;
@@ -84,6 +85,7 @@
 
 .creator {
   @include font ($weight: normal, $size: 1.8rem, $height: 2.9rem);
+  @extend %transition;
   text-decoration: none;
   color: $color-light;
   &:hover {
