@@ -22,4 +22,23 @@ function changeHeaderLinkStyle() {
 
 footerLinks.forEach( link => link.addEventListener('click', changeHeaderLinkStyle));
 
-console.log(footerLinks);
+
+//Nav-link's to active as you scroll through sections
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.section__link');
+window.onscroll = () => {
+  var current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (window.scrollY >= sectionTop - 120) {
+      current = section.getAttribute("id"); }
+  });
+
+  navLinks.forEach((li) => {
+    li.classList.remove("active");
+    if (li.classList.contains(current)) {
+      li.classList.add("active");
+    }
+  });
+};
