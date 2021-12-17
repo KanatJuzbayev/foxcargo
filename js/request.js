@@ -5,7 +5,6 @@ const body = document.querySelectorAll('body');
 function showRequestForm() {
   const request = document.querySelector('.request');
   request.classList.add('request-active');
-  body.classList.add('lock');
 }
 
 requestButtons.forEach( requestButton => requestButton.addEventListener('click', showRequestForm));

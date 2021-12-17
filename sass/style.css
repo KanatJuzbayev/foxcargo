@@ -882,6 +882,7 @@ ul {
   right: 80px;
   width: 35px;
   height: 35px;
+  border-radius: 50%;
 }
 
 .request-form__submit {
