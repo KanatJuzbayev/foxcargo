@@ -37,7 +37,7 @@ const forms = () => {
             postData('./mailer.php', formData)
                 .then(res => {
                     console.log(res);
-                    statusMessage.textContent = message.success;
+                    statusMessage.textContent = res;
                 })
                 .catch(() => statusMessage.textContent = message.failure)
                 .finally(() => {

@@ -892,7 +892,7 @@ ul {
   right: 80px;
   display: table-cell;
   vertical-align: middle;
-  padding: inherit;
+  padding: 20px;
   height: 80px;
   width: 250px;
   color: #12B7B6;
