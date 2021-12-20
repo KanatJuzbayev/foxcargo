@@ -16,11 +16,18 @@
   &:hover {
     color: $color-element;
   }
+  border-radius: 15px;
+
+  @include media-laptop {
+    @include font($style: normal, $weight: bold, $size: 1.4rem, $height: 2rems);
+    letter-spacing: 0.01em;
+    padding: 15px 20px;
+    border-radius: 10px;
+  }
 }
 
 .active {
   background: $color-dark;
   box-shadow: -10px -10px 30px #2B2B2B, 10px 10px 30px rgba(0, 0, 0, 0.45);
-  border-radius: 15px;
   color: $color-element;
 }

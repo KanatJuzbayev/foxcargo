@@ -1,24 +1,25 @@
 .about-us {
+  display: flex;
   margin: auto;
-  width: 1920px;
+  max-width: 1920px;
   background-image: url(../assets/image/background-2.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 1920px auto;
 }
 
 .about-us__wrapper {
-  width: 960px;
-  display: inline-flex;
-  background: rgba(31, 31, 31, 0.85);
+  float: left;
+  max-width: 1060px;
+  margin-left: 0;
 }
 
 .about-us__content {
-  padding: 120px 90px 60px;
+  padding: 120px 90px 60px 125px;
   color: #FFFFFF;
   @include font ($weight: normal, $size: 2.2rem, $height: 3.3rem);
   text-align: justify;
   height: 1200px;
+  background: rgba(31, 31, 31, 0.85);
 }
 
 .content__title {

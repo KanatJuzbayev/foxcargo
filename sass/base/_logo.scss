@@ -3,7 +3,12 @@
 }
 
 .logo-object {
-  width: 270px;
+  width: 265px;
+  height: 66px;
+
+  @include media-laptop {
+    width: 180px;
+  }
 }
 
 .logo-path {
