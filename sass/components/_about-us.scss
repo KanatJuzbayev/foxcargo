@@ -11,19 +11,30 @@
   float: left;
   max-width: 1060px;
   margin-left: 0;
+
+  @include media-laptop {
+    max-width: 920px;
+  }
+  @include media-tablet {
+    max-width: 650px;
+  }
 }
 
 .about-us__content {
-  padding: 120px 90px 60px 125px;
+  padding: 120px 90px 60px 120px;
   color: #FFFFFF;
-  @include font ($weight: normal, $size: 2.2rem, $height: 3.3rem);
   text-align: justify;
   height: 1200px;
   background: rgba(31, 31, 31, 0.85);
-}
 
-.content__title {
-  @include font ($weight: 300, $size: 3.5rem, $height: 6.4rem);
+  @include media-laptop {
+    padding: 110px 72px;
+  }
+
+  @include media-tablet {
+    padding: 100px 30px;
+    max-width: 650px;
+  }
 }
 
 .select__wrapper {
@@ -54,11 +65,8 @@
   background-position: center;
 }
 
-
 .select__text {
-  @include font ($weight: normal, $size: 1.8rem, $height: 2.9rem);
   display: none;
-  @extend %transition;
 }
 
 .select__active {

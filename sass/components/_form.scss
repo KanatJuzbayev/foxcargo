@@ -1,3 +1,4 @@
+// request form
 .request {
   position: fixed;
   width: 100%;
@@ -38,12 +39,14 @@
   padding: 20px 30px;
   overflow-y: auto;
   background-color: $color-light;
-  // grid-template-columns: 400px 530px;
 }
 
 .request-form__title {
   margin: 0 0 20px;
-  @include font ($weight: bold, $size: 3.5rem, $height: 6.4rem);
+  font-weight: bold;
+  @include media-tablet {
+    margin: 0 0 20px;
+	}
 }
 
 .request__input {
@@ -54,15 +57,21 @@
   border-radius: 15px;
   border: 0;
   height: 80px;
-  width: 450px;
+  max-width: 450px;
   padding-left: 40px;
   color: $color-dark;
   @include font($style: normal, $weight: bold, $size: 2rem, $height: 2.7rem);
-  &:focus-visible {
-    color: $color-dark;
-    @include font($style: normal, $weight: bold, $size: 2rem, $height: 2.7rem);
-    border: 0;
-  }
+
+  @include media-laptop {
+		@include font ($style: normal, $weight: bold, $size: 1.6rem, $height: 2rem);
+    height: 70px;
+	}
+  @include media-tablet {
+    padding-left: 30px;
+    width: 330px;
+    height: 60px;
+    margin-bottom: 20px;
+	}
 }
 
 .select__type {
@@ -76,6 +85,11 @@
   width: 35px;
   height: 35px;
   border-radius: 50%;
+
+  @include media-tablet {
+    top: 25px;
+    right: 35px;
+	}
 }
 
 .request-form__submit {
@@ -93,4 +107,33 @@
   box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(0, 0, 0, 0.09);
   border-radius: 15px;
   text-align: center;
+
+  @include media-tablet {
+    bottom: 25px;
+    right: 35px;
+    height: 60px;
+	}
+}
+
+// contacts sectiopn form
+.form__input {
+  padding: 18px 25px;
+  @include font($style: normal, $weight: bold, $size: 2.2rem, $height: 2.9rems);
+  @extend %transition;
+  letter-spacing: 0.005em;
+  cursor: pointer;
+  opacity: 0.9;
+  margin: 0 0 35px;
+  width: 100%;
+  background: $color-dark;
+  color: $color-element;
+  border: none;
+  background: $color-dark;
+  box-shadow: inset -10px -10px 30px #2B2B2B, inset 10px 10px 30px rgba(0, 0, 0, 0.45);
+  border-radius: 14px;
+
+  @include media-laptop {
+    @include font ($style: normal, $weight: bold, $size: 1.6rem, $height: 2rem);
+    padding: 16px 21px;
+  }
 }

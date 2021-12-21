@@ -1,28 +1,14 @@
-.we-do__wrapper {
-  padding: 80px 0 80px;
-}
-
-.we-do__elements {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  >* {
-    flex-basis: 30%;
-  }
-}
-
 .service {
   max-width: 446px;
-  padding: 35px 37px;
-  justify-content: center;
+  padding: 40px 40px;
   background: #F3F3F3;
   box-shadow: -20px -20px 50px #FFFFFF, 20px 20px 50px #D2D2D2;
   border-radius: 43px;
   @extend %transition;
   &:hover {
     background-color: #d3f3f2;
-    // border: 1px solid  #d3f3f2;
   }
+  text-align: center;
 }
 
 .we-do-object {
@@ -32,11 +18,15 @@
 }
 
 .service__title {
-  margin: 35px auto;
+  margin: 30px auto;
   text-align: center;
+  @include font ($weight: 500, $size: 3.5rem, $height: 4rem);
+
+  @include media-laptop {
+    @include font ($weight: 500, $size: 3.2rem, $height: 3.5rem);
+  }
 }
 
 .service__text {
-  @include font($weight: 600, $size: 2.6rem, $height: 4.3rem);
-  text-align: center;
+  display: inline;
 }

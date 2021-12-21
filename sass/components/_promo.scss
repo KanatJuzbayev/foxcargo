@@ -1,36 +1,42 @@
 .promo {
   background: $color-light;
-  padding: 120px 0 0;
+  padding: 120px 0;
+
+  @include media-laptop {
+    padding: 110px 0;
+  }
+  @include media-tablet {
+    padding: 100px 0;
+  }
 }
 
 .promo__wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .promo__content {
-  position: relative;
   padding-right: 30px;
 }
 
 .promo__text {
   max-width: 900px;
-  @include font ($weight: normal, $size: 2.2rem, $height: 2.9rem);
   color: #434343;
+  text-align: left;
 }
 
 .promo__image {
   position: relative;
   right: 0;
-  max-width: 900px;
+  max-width: 60%;
+  height: fit-content;
   border-radius: 20px;
+
 }
 
 .request__button {
   margin: 50px 0 0 60px;
-}
-
-.request__button {
   background: #F9F9F9;
   box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(0, 0, 0, 0.08);
   border-radius: 20px;
@@ -38,4 +44,10 @@
     &:hover {
       background-color: #d3f3f2;
     }
+  @include media-laptop {
+    margin: 80px 0 0 60px;
+  }
+  @include media-tablet {
+    margin: 15px 0 0 60px;
+  }
 }

@@ -2,19 +2,34 @@
   background-color: $color-dark;
   color: $color-light;
   @include font ($weight: normal, $size: 2.2rem, $height: 3.3rem);
-  text-align: justify;
+  padding: 120px 0;
+
+  @include media-laptop {
+    padding: 110px 0;
+  }
+  @include media-tablet {
+    padding: 100px 0;
+  }
 }
 
 .contacts__content {
   padding-right: 50px;
+
+  @include media-tablet {
+    padding-right: 20px;
+	}
 }
 
 .contacts__wrapper {
-  padding: 120px 0 150px;
+
 }
 
 .contacts-info {
-  margin-bottom: 50px;
+  margin-bottom: 45px;
+
+  @include media-laptop {
+    margin-bottom: 40px;
+	}
 }
 
 .contacts-info__link {
@@ -23,25 +38,6 @@
   &:hover {
     color: $color-element;
   }
-}
-
-.form__input {
-  padding: 18px 25px;
-  @include font($style: normal, $weight: bold, $size: 2.2rem, $height: 2.9rems);
-  @extend %transition;
-  letter-spacing: 0.005em;
-  cursor: pointer;
-  opacity: 0.9;
-  margin: 0 0 35px;
-  width: 100%;
-
-  background: $color-dark;
-  color: $color-element;
-  border: none;
-  background: $color-dark;
-  box-shadow: inset -10px -10px 30px #2B2B2B, inset 10px 10px 30px rgba(0, 0, 0, 0.45);
-  border-radius: 14px;
-
 }
 
 .contacts__button {

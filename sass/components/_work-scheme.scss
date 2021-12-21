@@ -1,8 +1,17 @@
-.work-scheme__wrapper {
-  padding: 120px 0 150px;
+.work-scheme {
+  padding: 120px 0;
   color: $color-dark;
-  @include font ($weight: normal, $size: 2.2rem, $height: 3.3rem);
-  text-align: justify;
+
+  @include media-laptop {
+    padding: 110px 0;
+  }
+  @include media-tablet {
+    padding: 100px 0;
+  }
+}
+
+.work-scheme__wrapper {
+
 }
 
 .scheme__elements {
@@ -10,16 +19,15 @@
   align-items: baseline;
 }
 
-.scheme__title {
- margin-bottom: 40px;
-}
-
 .scheme-object {
   display: block;
   margin: auto;
   margin-top: 110px;
-  width: 1200px;
+  max-width: 1200px;
 
+  @include media-tablet {
+    max-width: 960px;
+  }
 }
 
 .scheme-rect {

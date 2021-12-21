@@ -5,6 +5,15 @@
   padding: 28px 35px;
   cursor: pointer;
   color: #12B7B6;
+
+  @include media-laptop {
+    @include font($style: normal, $weight: bold, $size: 2rem, $height: 3rem);
+    padding: 23px 30px;
+  }
+
+  @include media-tablet {
+    padding: 18px 26px;
+	}
 }
 
 

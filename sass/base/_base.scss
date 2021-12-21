@@ -11,15 +11,37 @@ body {
 	color: $color-dark;
 }
 
-h1 {
-	@include font ($weight: 700, $size: 5.6rem, $height: 7.9rem);
-}
-
-h2 {
-	@include font ($weight: 300, $size: 5.6rem, $height: 7.9rem);
-}
-
-.section__title {
+h1, h2, .section__title {
   margin: 0 0 50px 0;
   @include font ($weight: 300, $size: 5.6rem, $height: 7.9rem);
+
+	@include media-laptop {
+    @include font($style: normal, $weight: 300, $size: 4rem, $height: 6rem);
+    letter-spacing: 0.01em;
+  }
+
+	@include media-tablet {
+    margin: 0 0 30px;
+  }
+}
+
+h3, .content__title {
+	@include font ($weight: 300, $size: 3.5rem, $height: 6.4rem);
+
+	@include media-laptop {
+		@include font ($weight: 300, $size: 2.6rem, $height: 5.5rem);
+	}
+}
+
+p, .status {
+	@include font ($weight: normal, $size: 2.2rem, $height: 2.9rem);
+
+	@include media-laptop {
+    @include font($style: normal, $weight: 400, $size: 1.6rem, $height: 2.4rem);
+    letter-spacing: 0.01em;
+  }
+}
+
+a {
+	text-decoration: none;
 }

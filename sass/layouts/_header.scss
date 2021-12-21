@@ -6,9 +6,6 @@
   background: $color-dark;
   padding: 14px 0;
 
-  @include media-laptop {
-    padding: 10px 0;
-  }
 }
 
 .header__wrapper {
@@ -23,6 +20,9 @@
 }
 
 .contact__link {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
   @include font($style: normal, $weight: bold, $size: 2rem, $height: 2.7rem);
   @extend %transition;
   letter-spacing: 0.01em;
@@ -32,9 +32,6 @@
   &:hover {
     color: $color-element;
   }
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
   &::before {
     content: "";
     background-repeat: no-repeat;
@@ -45,7 +42,7 @@
   }
 
   @include media-laptop {
-    @include font($style: normal, $weight: bold, $size: 1.4rem, $height: 2rems);
+    @include font($style: normal, $weight: bold, $size: 1.6rem, $height: 2rem);
     letter-spacing: 0.01em;
     &::before {
       width: 25px;
