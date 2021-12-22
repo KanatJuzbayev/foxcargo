@@ -14,9 +14,17 @@
   justify-content: space-between;
 }
 
+.hearder__navigation {
+  @include media-mobile-l {
+    display: none;
+  }
+}
 
 .header__contacts {
   display: grid;
+  @include media-mobile-l {
+    display: none;
+  }
 }
 
 .contact__link {

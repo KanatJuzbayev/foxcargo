@@ -8,4 +8,7 @@
   @include media-tablet {
     max-width: 960px;
   }
+  @include media-mobile-l {
+    max-width: 728px;
+  }
 }

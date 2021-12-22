@@ -12,6 +12,10 @@
   >* {
     flex-basis: $width;
   }
+
+  @include media-mobile-l {
+    display: block;
+  }
 }
 
 @mixin media-laptop {

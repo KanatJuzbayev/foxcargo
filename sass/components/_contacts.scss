@@ -10,6 +10,9 @@
   @include media-tablet {
     padding: 100px 0;
   }
+  @include media-mobile-l {
+    padding: 88px 0;
+  }
 }
 
 .contacts__content {
@@ -30,6 +33,9 @@
   @include media-laptop {
     margin-bottom: 40px;
 	}
+  @include media-mobile-l {
+    margin-bottom: 25px;
+	}
 }
 
 .contacts-info__link {
@@ -46,4 +52,12 @@
   border-radius: 14px;
   border: none;
   margin-bottom: 35px;
+}
+
+.map {
+  @include media-mobile-l {
+    display: block;
+    width: 728px;
+    height: 400px;
+	}
 }

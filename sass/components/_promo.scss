@@ -8,6 +8,9 @@
   @include media-tablet {
     padding: 100px 0;
   }
+  @include media-mobile-l {
+    padding: 88px 0;
+  }
 }
 
 .promo__wrapper {
@@ -32,7 +35,9 @@
   max-width: 60%;
   height: fit-content;
   border-radius: 20px;
-
+  @include media-mobile-l {
+    max-width: 50%;
+  }
 }
 
 .request__button {

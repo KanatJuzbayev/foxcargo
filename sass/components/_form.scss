@@ -25,6 +25,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .request-form {
@@ -39,6 +40,15 @@
   padding: 20px 30px;
   overflow-y: auto;
   background-color: $color-light;
+
+  @include media-tablet {
+    justify-content: start;
+    padding: 20px 70px;
+	}
+
+  @include media-mobile-l {
+    justify-content: start;
+  }
 }
 
 .request-form__title {
@@ -65,13 +75,18 @@
   @include media-laptop {
 		@include font ($style: normal, $weight: bold, $size: 1.6rem, $height: 2rem);
     height: 70px;
+    width: 420px;
 	}
   @include media-tablet {
     padding-left: 30px;
-    width: 330px;
+    max-height: 330px;
     height: 60px;
     margin-bottom: 20px;
+    width: 350px;
 	}
+  @include media-mobile-l {
+    width: 320px;
+  }
 }
 
 .select__type {
@@ -135,5 +150,9 @@
   @include media-laptop {
     @include font ($style: normal, $weight: bold, $size: 1.6rem, $height: 2rem);
     padding: 16px 21px;
+  }
+  @include media-mobile-l {
+    max-width: 460px;
+    margin: 0 0 15px;
   }
 }

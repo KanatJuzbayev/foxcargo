@@ -9,6 +9,11 @@
   @include media-laptop {
     width: 180px;
   }
+  @include media-mobile-l {
+    width: 160px;
+    height: 40px;
+  }
+
 }
 
 .logo-path {

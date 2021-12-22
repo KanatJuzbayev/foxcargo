@@ -33,7 +33,10 @@
 
   @include media-tablet {
     padding: 100px 30px;
-    max-width: 650px;
+  }
+
+  @include media-mobile-l {
+    padding: 88px 30px;
   }
 }
 

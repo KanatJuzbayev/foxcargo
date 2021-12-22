@@ -1,3 +1,6 @@
+.we-do__elements {
+}
+
 .service {
   max-width: 446px;
   padding: 40px 40px;
@@ -9,6 +12,10 @@
     background-color: #d3f3f2;
   }
   text-align: center;
+  @include media-mobile-l {
+    margin: auto;
+    margin-bottom: 30px;
+  }
 }
 
 .we-do-object {
