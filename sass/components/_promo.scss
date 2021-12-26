@@ -38,6 +38,9 @@
   @include media-mobile-l {
     max-width: 50%;
   }
+  @include media-mobile-m {
+    display: none;
+  }
 }
 
 .request__button {

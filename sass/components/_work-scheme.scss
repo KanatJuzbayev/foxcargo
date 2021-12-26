@@ -45,6 +45,14 @@
     max-width: 528px;
     margin-top: 50px;
   }
+  @include media-mobile-m {
+    display: block;
+    margin: auto;
+    max-width: 370px;
+    margin-top: 50px;
+  }
+
+
 }
 
 .scheme-rect {
