@@ -46,9 +46,11 @@
     margin-top: 50px;
   }
   @include media-mobile-m {
-    display: block;
-    margin: auto;
     max-width: 370px;
+    margin-top: 50px;
+  }
+  @include media-mobile-s {
+    max-width: 340px;
     margin-top: 50px;
   }
 

@@ -13,10 +13,18 @@
 .footer__wrapper {
   display: flex;
   align-items: flex-start;
+
+  @include media-mobile-m {
+    display: block;
+  }
 }
 
 .footer__logo {
   margin-right: 90px;
+
+  @include media-mobile-m {
+    margin-bottom: 30px;
+  }
 }
 
 .footer__logo-object {
@@ -27,6 +35,10 @@
 .footer__navigation {
   display: flex;
   width: 400px;
+
+  @include media-mobile-m {
+    margin-bottom: 30px;
+  }
 }
 
 .footer__navigation_links {
