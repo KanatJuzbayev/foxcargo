@@ -37,3 +37,7 @@
 @mixin media-mobile-s {
   @media (max-width: $mobile-s-width) { @content; }
 }
+
+@mixin media-mobile-xs {
+  @media (max-width: $mobile-xs-width) { @content; }
+}

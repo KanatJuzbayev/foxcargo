@@ -11,6 +11,9 @@
   @include media-mobile-l {
     padding: 88px 0;
   }
+  @include media-mobile-m {
+    padding: 82px 0;
+  }
 }
 
 .promo__wrapper {
@@ -21,12 +24,15 @@
 
 .promo__content {
   padding-right: 30px;
+  @include media-mobile-m {
+    padding-right: 0;
+  }
 }
 
 .promo__text {
   max-width: 900px;
   color: #434343;
-  text-align: left;
+  text-align: inherit;
 }
 
 .promo__image {
@@ -44,6 +50,8 @@
 }
 
 .request__button {
+  display: block;
+  // margin: auto;
   margin: 50px 0 0 60px;
   background: #F9F9F9;
   box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(0, 0, 0, 0.08);
@@ -56,6 +64,9 @@
     margin: 80px 0 0 60px;
   }
   @include media-tablet {
-    margin: 15px 0 0 60px;
+    margin: 35px 0 0 60px;
+  }
+  @include media-mobile-m {
+    margin: auto;
   }
 }

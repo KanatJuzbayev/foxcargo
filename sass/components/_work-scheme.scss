@@ -11,6 +11,9 @@
   @include media-mobile-l {
     padding: 88px 0;
   }
+  @include media-mobile-m {
+    padding: 82px 0;
+  }
 }
 
 .work-scheme__wrapper {
@@ -53,8 +56,10 @@
     max-width: 340px;
     margin-top: 50px;
   }
-
-
+  @include media-mobile-xs {
+    max-width: 280px;
+    margin-top: 50px;
+  }
 }
 
 .scheme-rect {

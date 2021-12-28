@@ -27,6 +27,11 @@ h1, h2, .section__title {
 	@include media-mobile-l {
     margin: 0 0 15px;
   }
+
+	@include media-mobile-m {
+		@include font($style: normal, $weight: 300, $size: 3rem, $height: 4rem);
+		letter-spacing: 0.01em;
+	}
 }
 
 h3, .content__title {
@@ -35,6 +40,11 @@ h3, .content__title {
 
 	@include media-laptop {
 		@include font ($weight: 300, $size: 2.6rem, $height: 5.5rem);
+	}
+
+	@include media-mobile-m {
+		@include font($style: normal, $weight: 300, $size: 2rem, $height: 2.4rem);
+		text-align: left;
 	}
 }
 

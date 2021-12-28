@@ -22,6 +22,9 @@
   height: 180px;
   margin: auto;
   display: block;
+  @include media-mobile-m {
+    height: 120px;
+  }
 }
 
 .service__title {

@@ -13,46 +13,31 @@
   overflow: hidden;
 }
 
-.lock {
-  overflow-y: hidden;
-}
-
 .request-active {
   visibility: visible;
 }
 
 .request__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.request-form {
-  position: relative;
-  top: 40px;
-  display: grid;
-  justify-content: center;
-  width: 100vw;
-  max-width: 1200px;
-  height: 100vh;
-  max-height: 850px;
-  padding: 20px 30px;
+  padding: 50px;
   overflow-y: auto;
   background-color: $color-light;
-
-  @include media-tablet {
-    justify-content: start;
-    padding: 20px 70px;
-	}
+  height: 90vh;
+  position: relative;
+  top: 40px;
+  bottom: 40px;
+  width: 80vw;
 
   @include media-mobile-l {
-    justify-content: start;
+    display: inline-block;
+    >* {
+      flex-basis: 100%;
+    }
   }
+
 }
 
 .request-form__title {
-  margin: 0 0 20px;
+  margin: 0 0 30px;
   font-weight: bold;
   @include media-tablet {
     margin: 0 0 20px;
@@ -66,8 +51,8 @@
   box-shadow: inset -10px -10px 20px #FFFFFF, inset 10px 10px 20px rgba(0, 0, 0, 0.09);
   border-radius: 15px;
   border: 0;
-  height: 80px;
-  max-width: 450px;
+  height: 60px;
+  width: 100%;
   padding-left: 40px;
   color: $color-dark;
   @include font($style: normal, $weight: bold, $size: 2rem, $height: 2.7rem);
@@ -93,10 +78,31 @@
   padding-right: 10px;
 }
 
+
+.form__submit {
+  position: relative;
+}
+
+.request-form__submit {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  height: 80px;
+  width: 350px;
+  color: $color-element;
+  background: $color-light;
+  box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(0, 0, 0, 0.09);
+  border-radius: 15px;
+  text-align: center;
+
+  margin-top: 20px;
+
+}
+
 .request__close {
   position: absolute;
   top: 35px;
-  right: 80px;
+  right: 50px;
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -104,30 +110,7 @@
   @include media-tablet {
     top: 25px;
     right: 35px;
-	}
-}
-
-.request-form__submit {
-  position: absolute;
-  bottom: 25px;
-  right: 80px;
-
-  display: table-cell;
-  vertical-align: middle;
-  padding: 20px;
-  height: 80px;
-  width: 250px;
-  color: $color-element;
-  background: $color-light;
-  box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(0, 0, 0, 0.09);
-  border-radius: 15px;
-  text-align: center;
-
-  @include media-tablet {
-    bottom: 25px;
-    right: 35px;
-    height: 60px;
-	}
+  }
 }
 
 // contacts sectiopn form

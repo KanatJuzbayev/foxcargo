@@ -56,24 +56,29 @@
       </div>
 
       <div id="request" class="request">
-        <div class="wrapper request__wrapper">
-          <form class="request-form" action="">
-            <h3 class="content__title request-form__title">Расчет ставки</h3>
-            <input type="text" name="name" class="request__input name" placeholder="Ваше имя" required>
-            <input type="email" name="email" class="request__input email" placeholder="email" required>
-            <input type="tel" name="tel" class="request__input tel" placeholder="+ 7 ( _ _ _ ) _ _ _  _ _  _ _" required>
-            <input type="text" name="departure" class="request__input departure" placeholder="Станция отправления" required>
-            <input type="text" name="arrival" class="request__input arrival" placeholder="Станция назначения" required>
-            <input type="text" name="cargo" class="request__input cargo" placeholder="Груз" required>
-            <select name="type" class="request__input select__type" required>
-              <option value="" selected>-- Тип вагона --</option>
-              <option value="Крытый" >Крытый</option>
-              <option value="Полувагон">Полувагон</option>
-              <option value="Хоппер">Хоппер</option>
-              <option value="Цистерна">Цистерна</option>
-              <option value="Изотерм. вагон-термос">Изотерм. вагон-термос</option>
-            </select>
-            <button type="submit" class="request__input request-form__submit">Отправить заявку</button>
+        <div class="wrapper">
+          <form class="layout-2-column request__wrapper" action="">
+            <div class="inputs">
+              <h3 class="content__title request-form__title">Расчет ставки</h3>
+              <input type="text" name="name" class="request__input name" placeholder="Ваше имя" required>
+              <input type="email" name="email" class="request__input email" placeholder="email" required>
+              <input type="tel" name="tel" class="request__input tel" placeholder="+ 7 ( _ _ _ ) _ _ _  _ _  _ _" required>
+              <input type="text" name="departure" class="request__input departure" placeholder="Станция отправления" required>
+              <input type="text" name="arrival" class="request__input arrival" placeholder="Станция назначения" required>
+              <input type="text" name="cargo" class="request__input cargo" placeholder="Груз" required>
+              <select name="type" class="request__input select__type" required>
+                <option value="" selected>-- Тип вагона --</option>
+                <option value="Крытый" >Крытый</option>
+                <option value="Полувагон">Полувагон</option>
+                <option value="Хоппер">Хоппер</option>
+                <option value="Цистерна">Цистерна</option>
+                <option value="Изотерм. вагон-термос">Изотерм. вагон-термос</option>
+              </select>
+
+            </div>
+            <div class="form__submit">
+              <button type="submit" class="request__input request-form__submit">Отправить заявку</button>
+            </div>
             <button type="button" name="button" class="button__close request__close"></button>
           </form>
         </div>

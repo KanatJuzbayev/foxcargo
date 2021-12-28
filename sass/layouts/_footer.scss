@@ -34,7 +34,7 @@
 
 .footer__navigation {
   display: flex;
-  width: 400px;
+  max-width: 400px;
 
   @include media-mobile-m {
     margin-bottom: 30px;
