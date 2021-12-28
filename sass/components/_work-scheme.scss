@@ -45,20 +45,9 @@
   @include media-mobile-l {
     display: block;
     margin: auto;
-    max-width: 528px;
+    max-width: 100%;
     margin-top: 50px;
-  }
-  @include media-mobile-m {
-    max-width: 370px;
-    margin-top: 50px;
-  }
-  @include media-mobile-s {
-    max-width: 340px;
-    margin-top: 50px;
-  }
-  @include media-mobile-xs {
-    max-width: 280px;
-    margin-top: 50px;
+    padding: 0 10px;
   }
 }
 

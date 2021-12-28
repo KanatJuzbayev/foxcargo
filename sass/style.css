@@ -959,26 +959,9 @@ ul {
   .scheme-object_small {
     display: block;
     margin: auto;
-    max-width: 528px;
+    max-width: 100%;
     margin-top: 50px;
-  }
-}
-@media (max-width: 430px) {
-  .scheme-object_small {
-    max-width: 370px;
-    margin-top: 50px;
-  }
-}
-@media (max-width: 380px) {
-  .scheme-object_small {
-    max-width: 340px;
-    margin-top: 50px;
-  }
-}
-@media (max-width: 320px) {
-  .scheme-object_small {
-    max-width: 280px;
-    margin-top: 50px;
+    padding: 0 10px;
   }
 }
 
