@@ -1403,7 +1403,7 @@ ul {
 
 .footer__navigation {
   display: flex;
-  max-width: 400px;
+  width: 300px;
 }
 @media (max-width: 430px) {
   .footer__navigation {
@@ -1420,6 +1420,7 @@ ul {
   text-decoration: none;
   color: #f3f3f3;
   margin-bottom: 20px;
+  max-width: 160px;
 }
 .footer__link:hover {
   color: #12B7B6;
