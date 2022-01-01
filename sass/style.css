@@ -1067,11 +1067,11 @@ ul {
   padding: 50px;
   overflow-y: auto;
   background-color: #f3f3f3;
-  height: 90%;
+  height: 90vh;
   position: relative;
   top: 40px;
   bottom: 40px;
-  width: 90%;
+  margin: auto;
 }
 @media (max-width: 1024px) {
   .request__wrapper {
@@ -1256,7 +1256,7 @@ ul {
 }
 @media (max-width: 1024px) {
   .layout-2-column {
-    display: inline-block;
+    display: block;
   }
 }
 
