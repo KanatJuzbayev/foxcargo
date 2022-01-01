@@ -22,6 +22,7 @@
   overflow-y: auto;
   background-color: $color-light;
   height: 90vh;
+  max-height: 770px;
   position: relative;
   top: 40px;
   bottom: 40px;
@@ -29,6 +30,7 @@
 
   @include media-tablet {
     padding: 0 20px;
+    top: 20px;
   }
 }
 
@@ -96,6 +98,7 @@
 
   @include media-tablet {
     position: inherit;
+    padding: 15px;
   }
 }
 
@@ -138,8 +141,14 @@
     @include font ($style: normal, $weight: bold, $size: 1.6rem, $height: 2rem);
     padding: 16px 21px;
   }
-  @include media-mobile-l {
+  @include media-tablet {
     max-width: 460px;
+  }
+  @include media-mobile-l {
     margin: 0 0 15px;
   }
+}
+
+.status {
+  margin-bottom: 20px;
 }

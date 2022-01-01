@@ -1068,6 +1068,7 @@ ul {
   overflow-y: auto;
   background-color: #f3f3f3;
   height: 90vh;
+  max-height: 770px;
   position: relative;
   top: 40px;
   bottom: 40px;
@@ -1076,6 +1077,7 @@ ul {
 @media (max-width: 1024px) {
   .request__wrapper {
     padding: 0 20px;
+    top: 20px;
   }
 }
 
@@ -1155,6 +1157,7 @@ ul {
 @media (max-width: 1024px) {
   .request-form__submit {
     position: inherit;
+    padding: 15px;
   }
 }
 
@@ -1206,11 +1209,19 @@ ul {
     padding: 16px 21px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .form__input {
     max-width: 460px;
+  }
+}
+@media (max-width: 768px) {
+  .form__input {
     margin: 0 0 15px;
   }
+}
+
+.status {
+  margin-bottom: 20px;
 }
 
 .layout-4-column {
