@@ -17,13 +17,14 @@ function closeRequestForm() {
   const request = document.querySelector('.request');
   request.classList.remove('request-active');
 }
+
 closeRequestButtons.forEach( closeRequestButton => closeRequestButton.addEventListener('click', closeRequestForm));
 
 
 const request = document.querySelector('.request');
 
 request.addEventListener('click', function(e) {
-  if (!e.target.closest('.request-form')) {
+  if (!e.target.closest('.request__wrapper')) {
     closeRequestForm();
   }
 });

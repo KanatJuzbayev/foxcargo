@@ -21,26 +21,22 @@
   padding: 50px;
   overflow-y: auto;
   background-color: $color-light;
-  height: 90vh;
+  height: 90%;
   position: relative;
   top: 40px;
   bottom: 40px;
-  width: 80vw;
+  width: 90%;
 
-  @include media-mobile-l {
-    display: inline-block;
-    >* {
-      flex-basis: 100%;
-    }
+  @include media-tablet {
+    padding: 0 20px;
   }
-
 }
 
 .request-form__title {
   margin: 0 0 30px;
   font-weight: bold;
   @include media-tablet {
-    margin: 0 0 20px;
+    margin: 20px 0;
 	}
 }
 
@@ -60,17 +56,19 @@
   @include media-laptop {
 		@include font ($style: normal, $weight: bold, $size: 1.6rem, $height: 2rem);
     height: 70px;
-    width: 420px;
+    max-width: 420px;
 	}
   @include media-tablet {
     padding-left: 30px;
     max-height: 330px;
     height: 60px;
     margin-bottom: 20px;
-    width: 350px;
 	}
-  @include media-mobile-l {
-    width: 320px;
+  @include media-mobile-m {
+    height: 50px;
+    margin-bottom: 12px;
+    padding-left: 15px;
+
   }
 }
 
@@ -88,15 +86,17 @@
   bottom: 0;
   padding: 20px;
   height: 80px;
-  width: 350px;
+  max-width: 350px;
   color: $color-element;
   background: $color-light;
   box-shadow: -10px -10px 20px #FFFFFF, 10px 10px 20px rgba(0, 0, 0, 0.09);
   border-radius: 15px;
   text-align: center;
-
   margin-top: 20px;
 
+  @include media-tablet {
+    position: inherit;
+  }
 }
 
 .request__close {
@@ -110,6 +110,10 @@
   @include media-tablet {
     top: 25px;
     right: 35px;
+  }
+  @include media-mobile-m {
+    top: 12px;
+    right: 12px;
   }
 }
 

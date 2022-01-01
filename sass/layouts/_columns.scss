@@ -8,4 +8,8 @@
 
 .layout-2-column {
   @include columns (48%);
+  
+  @include media-tablet {
+    display: inline-block;
+  }
 }
