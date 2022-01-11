@@ -3,6 +3,7 @@ const requestButtons = document.querySelectorAll('.request__button');
 const body = document.querySelectorAll('body');
 
 function showRequestForm() {
+  document.body.classList.toggle('lock');
   const request = document.querySelector('.request');
   request.classList.add('request-active');
 }
@@ -14,6 +15,7 @@ requestButtons.forEach( requestButton => requestButton.addEventListener('click',
 const closeRequestButtons = document.querySelectorAll('.request__close');
 
 function closeRequestForm() {
+  document.body.classList.toggle('lock');
   const request = document.querySelector('.request');
   request.classList.remove('request-active');
 }

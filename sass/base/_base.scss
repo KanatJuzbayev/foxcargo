@@ -11,6 +11,10 @@ body {
 	color: $color-dark;
 }
 
+body.lock {
+	overflow: hidden;
+}
+
 h1, h2, .section__title {
   margin: 0 0 50px 0;
   @include font ($weight: 300, $size: 5.6rem, $height: 7.9rem);

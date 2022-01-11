@@ -15,14 +15,14 @@
 }
 
 .hearder__navigation {
-  @include media-mobile-l {
+  @include media-tablet {
     display: none;
   }
 }
 
 .header__contacts {
   display: grid;
-  @include media-mobile-l {
+  @include media-tablet {
     display: none;
   }
 }

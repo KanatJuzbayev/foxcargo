@@ -1,6 +1,9 @@
 .navigation {
   display: flex;
   align-items: center;
+  @include media-tablet {
+    display: inline;
+  }
 }
 
 .section__link {
@@ -24,10 +27,44 @@
     padding: 15px 20px;
     border-radius: 10px;
   }
+
+  @include media-tablet {
+    margin-bottom: 10px;
+    display: inline-flex;
+    width: 220px;
+  }
 }
 
-.active {
+li > a.active {
   background: $color-dark;
   box-shadow: -10px -10px 30px #2B2B2B, 10px 10px 30px rgba(0, 0, 0, 0.45);
   color: $color-element;
+}
+
+// hamburger navigation
+
+nav.hearder__navigation {
+  @include media-tablet {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 80px 30px 30px;
+    text-align: right;
+    overflow-y: auto;
+    z-index: 10;
+    transition: all 0.3s ease 0s;
+    transform: translate(100%, 0px);
+    *> li {
+      display: block;
+      // width: ;
+    }
+  }
+}
+
+nav.hearder__navigation.active {
+  transform: translate(0px, 0px);
 }
