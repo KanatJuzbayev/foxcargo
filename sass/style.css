@@ -771,8 +771,8 @@ nav.hearder__navigation.active {
   position: relative;
   right: 0;
   max-width: 60%;
-  max-height: 1885px;
-  height: fit-content;
+  align-items: center;
+  height: auto;
   border-radius: 20px;
 }
 @media (max-width: 768px) {
