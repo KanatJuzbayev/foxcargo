@@ -58,9 +58,10 @@
 }
 
 .map {
-  @include media-laptop {
-    display: block;
-    width: 100%;
-    height: 400px;
-	}
+  display: none;
+  // @include media-laptop {
+  //   display: block;
+  //   width: 100%;
+  //   height: 400px;
+	// }
 }

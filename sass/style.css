@@ -1095,12 +1095,8 @@ nav.hearder__navigation.active {
   margin-bottom: 35px;
 }
 
-@media (max-width: 1440px) {
-  .map {
-    display: block;
-    width: 100%;
-    height: 400px;
-  }
+.map {
+  display: none;
 }
 
 .request {
@@ -1561,6 +1557,10 @@ nav.hearder__navigation.active {
     line-height: 2rem;
     letter-spacing: 0.01em;
   }
+}
+
+.creator {
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
