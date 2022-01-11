@@ -1,4 +1,17 @@
 // Scroll by click
+const menuLinks = document.querySelectorAll('.section__link[data-goto]');
+if (menuLinks.length > 0) {
+  menuLinks.forEach(menuLink => {
+    menuLink.addEventListener('click', menuOnClick);
+  });
+}
+
+const footerLinks = document.querySelectorAll('.footer__link[data-goto]');
+if (footerLinks.length > 0) {
+  footerLinks.forEach(footerLink => {
+    footerLink.addEventListener('click', menuOnClick);
+  });
+}
 
 function menuOnClick(e) {
   const menuLink = e.target;
@@ -13,22 +26,24 @@ function menuOnClick(e) {
       // behavior: 'smooth'
     });
     e.preventDefault();
+
+    showHideHamburger();
   }
 }
 
-const menuLinks = document.querySelectorAll('.section__link[data-goto]');
-if (menuLinks.length > 0) {
-  menuLinks.forEach(menuLink => {
-    menuLink.addEventListener('click', menuOnClick);
-  });
+// show hamburger nav
+const hamburger = document.querySelectorAll('.hamburger');
+
+function showHideHamburger() {
+  document.body.classList.toggle('lock');
+  const hamburgerIcon = document.querySelector('.hamburger');
+  hamburgerIcon.classList.toggle('active');
+
+  const hearderNavigation = document.querySelector('.hearder__navigation');
+  hearderNavigation.classList.toggle('active');
 }
 
-const footerLinks = document.querySelectorAll('.footer__link[data-goto]');
-if (footerLinks.length > 0) {
-  footerLinks.forEach(footerLink => {
-    footerLink.addEventListener('click', menuOnClick);
-  });
-}
+hamburger.forEach(burger => burger.addEventListener('click', showHideHamburger));
 
 
 // Nav-link's to active as you scroll through sections
@@ -53,19 +68,6 @@ window.onscroll = () => {
 };
 
 
-// show hamburger nav
-const hamburger = document.querySelectorAll('.hamburger');
-
-function showHideHamburger() {
-  document.body.classList.toggle('lock');
-  const hamburgerIcon = document.querySelector('.hamburger');
-  hamburgerIcon.classList.toggle('active');
-
-  const hearderNavigation = document.querySelector('.hearder__navigation');
-  hearderNavigation.classList.toggle('active');
-}
-
-hamburger.forEach(burger => burger.addEventListener('click', showHideHamburger));
 
 
 // hide nav by click other aria
