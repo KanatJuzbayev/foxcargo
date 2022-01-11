@@ -18,7 +18,7 @@ try {
     $mail->setFrom('info@foxcargo.kz', 'FoxCargo');
     // Кому письмо
     $mail->addAddress('logistic.specialist@foxcargo.kz');
-    $mail->addAddress('kanat.juzbayev@gmail.com');
+    $mail->addAddress('logistic.manager@foxcargo.kz');
     // Тема письма
     $mail->Subject = 'Запрос с foxcargo.kz!';
 
