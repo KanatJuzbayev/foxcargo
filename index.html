@@ -1,92 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="sass/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link rel="icon" href="assets/svg/favicon.svg">
-  <title>Fox Сargo</title>
-</head>
-<body>
-  <header class="header">
-    <div class="wrapper header__wrapper">
-      <a class="logo header__logo" href="#">
-        <object type="image/svg+xml" data="assets/svg/logo/logo.svg" class="logo-object">
-          Your browser does not support SVG
-        </object>
-      </a>
-      <nav class="hearder__navigation">
-        <ul class="navigation">
-          <li ><a data-goto=".promo" class="section__link promo__section active" href="#">Главная</a></li>
-          <li ><a data-goto=".about-us" class="section__link about-us__section" href="#">О нас</a></li>
-          <li ><a data-goto=".work-scheme" class="section__link work-scheme__section" href="#">Схема работы</a></li>
-          <li ><a data-goto=".contacts" class="section__link contacts__section" href="#">Контакты</a></li>
-        </ul>
-      </nav>
-      <div class="header__contacts">
-        <a class="contact__link mail__link" href="mailto:info@foxcargo.kz?subject=feedback">
-          info@foxcargo.kz
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="sass/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/svg/favicon.svg" />
+    <title>Fox Сargo</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <a class="logo header__logo" href="#">
+          <object
+            type="image/svg+xml"
+            data="assets/svg/logo/logo.svg"
+            class="logo-object"
+          >
+            Your browser does not support SVG
+          </object>
         </a>
-        <a class="contact__link phone__link" href="tel:+7727327 0007">
-          +7 727 327 0007
-        </a>
-      </div>
-      <div class="hamburger">
-        <span class="hamburger__line"></span>
-      </div>
-    </div>
-  </header>
-
-  <section id="promo__section" class="promo">
-    <div class="wrapper">
-      <div class="promo__wrapper">
-        <div class="promo__content">
-          <h1 class="section__title">Fox Cargo</h1>
-          <p class="promo__text"> — быстроразвивающаяся железнодорожная экспедиторская компания нового формата</p>
-          <p class="promo__text">Готовы предложить выгодные условия по предоставлению вагонов, с Нами вы получаете минимальные расценки по интересующим Вас направлениям.</p>
-          <p class="promo__text">Для получения актуальной ставки в кратчайшие сроки заполните форму Расчета ставки</p>
-          <button class="button request__button">Расчет ставки</button>
+        <nav class="hearder__navigation">
+          <ul class="navigation">
+            <li>
+              <a
+                data-goto=".promo"
+                class="section__link promo__section active"
+                href="#"
+                >Главная</a
+              >
+            </li>
+            <li>
+              <a
+                data-goto=".about-us"
+                class="section__link about-us__section"
+                href="#"
+                >О нас</a
+              >
+            </li>
+            <li>
+              <a
+                data-goto=".work-scheme"
+                class="section__link work-scheme__section"
+                href="#"
+                >Схема работы</a
+              >
+            </li>
+            <li>
+              <a
+                data-goto=".contacts"
+                class="section__link contacts__section"
+                href="#"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="header__contacts">
+          <a
+            class="contact__link mail__link"
+            href="mailto:info@foxcargo.kz?subject=feedback"
+          >
+            info@foxcargo.kz
+          </a>
+          <a class="contact__link phone__link" href="tel:+7727327 0007">
+            +7 727 327 0007
+          </a>
         </div>
-        <img class="promo__image" src="assets/image/background-1.jpg" alt="Train">
-      </div>
-
-      <div id="request" class="request">
-        <div class="wrapper">
-          <form class="layout-2-column request__wrapper" action="">
-            <div class="inputs">
-              <h3 class="content__title request-form__title">Расчет ставки</h3>
-              <input type="text" name="name" class="request__input name" placeholder="Ваше имя" required>
-              <input type="email" name="email" class="request__input email" placeholder="email" required>
-              <input type="tel" name="tel" class="request__input tel" placeholder="+ 7 ( _ _ _ ) _ _ _  _ _  _ _" required>
-              <input type="text" name="departure" class="request__input departure" placeholder="Станция отправления" required>
-              <input type="text" name="arrival" class="request__input arrival" placeholder="Станция назначения" required>
-              <input type="text" name="cargo" class="request__input cargo" placeholder="Груз" required>
-              <select name="type" class="request__input select__type" required>
-                <option value="" selected>-- Тип вагона --</option>
-                <option value="Крытый" >Крытый</option>
-                <option value="Полувагон">Полувагон</option>
-                <option value="Хоппер">Хоппер</option>
-                <option value="Цистерна">Цистерна</option>
-                <option value="Изотерм. вагон-термос">Изотерм. вагон-термос</option>
-              </select>
-
-            </div>
-            <div class="form__submit">
-              <button type="submit" class="request__input request-form__submit">Отправить заявку</button>
-            </div>
-            <button type="button" name="button" class="button__close request__close"></button>
-          </form>
+        <div class="hamburger">
+          <span class="hamburger__line"></span>
         </div>
       </div>
+    </header>
 
-      <div class="layout-3-column we-do__elements">
+    <section id="promo__section" class="promo">
+      <div class="wrapper">
+        <div class="promo__wrapper">
+          <div class="promo__content">
+            <h1 class="section__title">Fox Cargo</h1>
+            <p class="promo__text">
+              — быстроразвивающаяся железнодорожная экспедиторская компания
+              нового формата
+            </p>
+            <p class="promo__text">
+              Готовы предложить выгодные условия по предоставлению вагонов, с
+              Нами вы получаете минимальные расценки по интересующим Вас
+              направлениям.
+            </p>
+            <p class="promo__text">
+              Для получения актуальной ставки в кратчайшие сроки заполните форму
+              Расчета ставки
+            </p>
+            <button class="button request__button">Расчет ставки</button>
+          </div>
+          <img
+            class="promo__image"
+            src="assets/image/background-1.jpg"
+            alt="Train"
+          />
+        </div>
+
+        <div id="request" class="request">
+          <div class="wrapper">
+            <form class="layout-2-column request__wrapper" action="">
+              <div class="inputs">
+                <h3 class="content__title request-form__title">
+                  Расчет ставки
+                </h3>
+                <input
+                  type="text"
+                  name="name"
+                  class="request__input name"
+                  placeholder="Ваше имя"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  class="request__input email"
+                  placeholder="email"
+                  required
+                />
+                <input
+                  type="tel"
+                  name="tel"
+                  class="request__input tel"
+                  placeholder="+ 7 ( _ _ _ ) _ _ _  _ _  _ _"
+                  required
+                />
+                <input
+                  type="text"
+                  name="departure"
+                  class="request__input departure"
+                  placeholder="Станция отправления"
+                  required
+                />
+                <input
+                  type="text"
+                  name="arrival"
+                  class="request__input arrival"
+                  placeholder="Станция назначения"
+                  required
+                />
+                <input
+                  type="text"
+                  name="cargo"
+                  class="request__input cargo"
+                  placeholder="Груз"
+                  required
+                />
+                <select
+                  name="type"
+                  class="request__input select__type"
+                  required
+                >
+                  <option value="" selected>-- Тип вагона --</option>
+                  <option value="Крытый">Крытый</option>
+                  <option value="Полувагон">Полувагон</option>
+                  <option value="Хоппер">Хоппер</option>
+                  <option value="Цистерна">Цистерна</option>
+                  <option value="Изотерм. вагон-термос">
+                    Изотерм. вагон-термос
+                  </option>
+                </select>
+              </div>
+              <div class="form__submit">
+                <button
+                  type="submit"
+                  class="request__input request-form__submit"
+                >
+                  Отправить заявку
+                </button>
+              </div>
+              <button
+                type="button"
+                name="button"
+                class="button__close request__close"
+              ></button>
+            </form>
+          </div>
+        </div>
+
+        <div class="layout-3-column we-do__elements">
           <div class="service">
-            <object type="image/svg+xml" data="assets/svg/group1.svg" class="we-do-object">
+            <object
+              type="image/svg+xml"
+              data="assets/svg/group1.svg"
+              class="we-do-object"
+            >
               Your browser does not support SVG
             </object>
             <h3 class="service__title">Подвижной состав</h3>
@@ -96,147 +207,272 @@
             </p>
           </div>
           <div class="service">
-            <object type="image/svg+xml" data="assets/svg/group3.svg" class="we-do-object">
+            <object
+              type="image/svg+xml"
+              data="assets/svg/group3.svg"
+              class="we-do-object"
+            >
               Your browser does not support SVG
             </object>
             <h3 class="service__title">ЖД сборы</h3>
             <p class="service__text">
-              Оплата тарифов по путям следования по территории ближнего и дальнего зарубежья.
+              Оплата тарифов по путям следования по территории ближнего и
+              дальнего зарубежья.
             </p>
           </div>
           <div class="service">
-            <object type="image/svg+xml" data="assets/svg/group2.svg" class="we-do-object">
+            <object
+              type="image/svg+xml"
+              data="assets/svg/group2.svg"
+              class="we-do-object"
+            >
               Your browser does not support SVG
             </object>
             <h3 class="service__title">Грузы</h3>
             <p class="service__text">
-              Поиск погрузки в интересующем вас регионе.
-              Широкая география сотрудничества с отправителями.
+              Поиск погрузки в интересующем вас регионе. Широкая география
+              сотрудничества с отправителями.
             </p>
           </div>
         </div>
-
-    </div>
-
-  </section>
-
-  <section id="about-us__section" class="about-us">
-    <div class="about-us__wrapper">
-      <div class="about-us__content">
-        <h2 class="section__title">О нас</h2>
-        <h3 class="content__title">Ключевые моменты о компании</h3>
-        <p>Фокс Карго является молодой, быстроразвивающейся и амбициозной компанией нового формата.</p>
-
-        <div class="select__wrapper">
-          <div class="about-us__select">
-            <div class="select__titlte">
-              <img class="select__dots" src="assets/svg/dots.svg" alt="img-dots">
-              <p class="history__title">История</p>
-            </div>
-            <div data-key="0" class="select__arrow"></div>
-          </div>
-          <p data-key="0" class="select__text">История компании берет начало в 2016 году. За эти годы работы на казахстанском рынке компания сумела стать надежным партнером, который обеспечивает беспрерывный и  безопасный грузопоток. Оперативность, качество и сервис услуг оценили клиенты в Казахстане и за рубежом.</p>
-        </div>
-
-        <div class="select__wrapper">
-          <div class="about-us__select">
-            <div class="select__titlte">
-              <img class="select__dots" src="assets/svg/dots.svg" alt="img-dots">
-              <p class="professionalism__title">Профессионализм</p>
-            </div>
-            <div data-key="1" class="select__arrow"></div>
-          </div>
-          <p data-key="1" class="select__text">Наша компания занимается не просто продажей кодов, поиском клиентов и продажей услуг чужих вагонов, «Фокс Карго» в первую очередь продает свой интеллект и квалификацию, во благо как собственников вагонов, так и пользователей услуг железных дорог. Компания предлагает новые форматы сотрудничества и осваивает новые ниши в сфере логистики, которые еще не опробованы. Штат сотрудников компании не состоит из ЖД специалистов, а из людей с нестандартным мышлением и неограничивающим себя старыми догмами и стереотипами. Расчеты которые мы сделали учитывают все риски, возникающие в процессе перевозок со всеми поправками. </p>
-        </div>
-
-        <div class="select__wrapper">
-          <div class="about-us__select">
-            <div class="select__titlte">
-              <img class="select__dots" src="assets/svg/dots.svg" alt="img-dots">
-              <p class="goals__titile">Задачи</p>
-            </div>
-            <div data-key="2" class="select__arrow"></div>
-          </div>
-          <p data-key="2" class="select__text">Наша компания предлагает своим клиентам экономическую модель где две и более компаний сообща работают с целью сокращения расходов тем самым став более конкурентными не в ущерб друг другу. В этом наша задача – в достижении более эффективных форматов бизнеса. Данная экономическая модель жизнеспособна и актуальна для всех заинтересованных сторон.
-          Все затруднения возникающие при этом решается оперативно и несет полную ответственность за свои действия.</p>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="work-scheme__section" class="work-scheme">
-    <div class="wrapper work-scheme__wrapper">
-      <h2 class="section__title">Схема работы</h2>
-      <p>Активная связь и поддержка на каждом этапе работы</p>
-      <object type="image/svg+xml" data="assets/svg/scheme.svg" class="scheme-object">
-        Your browser does not support SVG
-      </object>
-      <object type="image/svg+xml" data="assets/svg/scheme-small.svg" class="scheme-object_small">
-        Your browser does not support SVG
-      </object>
-    </div>
-  </section>
+    <section id="about-us__section" class="about-us">
+      <div class="about-us__wrapper">
+        <div class="about-us__content">
+          <h2 class="section__title">О нас</h2>
+          <h3 class="content__title">Ключевые моменты о компании</h3>
+          <p>
+            Фокс Карго является молодой, быстроразвивающейся и амбициозной
+            компанией нового формата.
+          </p>
 
-  <section id="contacts__section" class="contacts">
-    <div class="wrapper contacts__wrapper">
-      <div class="layout-2-column">
-        <div class="contacts__content">
-          <p class="section__title">ТОО Фокс Карго</p>
-          <div class="contacts-info">
-            <p>Адрес: 161300 Казахстан, Туркестанская обл., <br>г. Шымкент, ул. Биназар Батыр 193А</p>
-            <p>тел: <a class="contacts-info__link"  href="tel:+77273270007">+ 7 727 327 0007</a></p>
-            <p>моб: <a class="contacts-info__link" href="tel:+77079009392">+ 7 707 900 9392</a></p>
-            <p>email: <a class="contacts-info__link" href="mailto:info@foxcargo.kz">info@foxcargo.kz ,</a><a class="contacts-info__link" href="mailto:logistic.specialist@foxcargo.kz"> logistic.specialist@foxcargo.kz</a></p>
-          </div>
-          <form action="" method="post">
-            <input class="form__input" type="text" name="name" placeholder="Имя" required>
-            <input class="form__input" type="email" name="email" placeholder="Ваш email" required>
-            <div class="contact-us__button">
-              <button class="button contacts__button" type="submit">Связаться с нами  → </button>
+          <div class="select__wrapper">
+            <div class="about-us__select">
+              <div class="select__titlte">
+                <img
+                  class="select__dots"
+                  src="assets/svg/dots.svg"
+                  alt="img-dots"
+                />
+                <p class="history__title">История</p>
+              </div>
+              <div data-key="0" class="select__arrow"></div>
             </div>
-          </form>
+            <p data-key="0" class="select__text">
+              История компании берет начало в 2016 году. За эти годы работы на
+              казахстанском рынке компания сумела стать надежным партнером,
+              который обеспечивает беспрерывный и безопасный грузопоток.
+              Оперативность, качество и сервис услуг оценили клиенты в
+              Казахстане и за рубежом.
+            </p>
+          </div>
+
+          <div class="select__wrapper">
+            <div class="about-us__select">
+              <div class="select__titlte">
+                <img
+                  class="select__dots"
+                  src="assets/svg/dots.svg"
+                  alt="img-dots"
+                />
+                <p class="professionalism__title">Профессионализм</p>
+              </div>
+              <div data-key="1" class="select__arrow"></div>
+            </div>
+            <p data-key="1" class="select__text">
+              Наша компания занимается не просто продажей кодов, поиском
+              клиентов и продажей услуг чужих вагонов, «Фокс Карго» в первую
+              очередь продает свой интеллект и квалификацию, во благо как
+              собственников вагонов, так и пользователей услуг железных дорог.
+              Компания предлагает новые форматы сотрудничества и осваивает новые
+              ниши в сфере логистики, которые еще не опробованы. Штат
+              сотрудников компании не состоит из ЖД специалистов, а из людей с
+              нестандартным мышлением и неограничивающим себя старыми догмами и
+              стереотипами. Расчеты которые мы сделали учитывают все риски,
+              возникающие в процессе перевозок со всеми поправками.
+            </p>
+          </div>
+
+          <div class="select__wrapper">
+            <div class="about-us__select">
+              <div class="select__titlte">
+                <img
+                  class="select__dots"
+                  src="assets/svg/dots.svg"
+                  alt="img-dots"
+                />
+                <p class="goals__titile">Задачи</p>
+              </div>
+              <div data-key="2" class="select__arrow"></div>
+            </div>
+            <p data-key="2" class="select__text">
+              Наша компания предлагает своим клиентам экономическую модель где
+              две и более компаний сообща работают с целью сокращения расходов
+              тем самым став более конкурентными не в ущерб друг другу. В этом
+              наша задача – в достижении более эффективных форматов бизнеса.
+              Данная экономическая модель жизнеспособна и актуальна для всех
+              заинтересованных сторон. Все затруднения возникающие при этом
+              решается оперативно и несет полную ответственность за свои
+              действия.
+            </p>
+          </div>
         </div>
-
-        <iframe class="map" src="https://api.mapbox.com/styles/v1/kanat-juzbayev/cku85gpaf4u9i17s9rjkk6flf.html?title=false&access_token=pk.eyJ1Ijoia2FuYXQtanV6YmF5ZXYiLCJhIjoiY2t1ODQ2cnA2MDRlbDJubXp5dzl6cXpxeiJ9.G6bJAkTgPyPKrQvpon-jzQ&zoomwheel=false#15.94/48.86091/2.3364" title="Monochrome" style="border:none;"></iframe>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="footer">
-    <div class="wrapper footer__wrapper">
-      <a class="logo footer__logo" href="#promo__section">
-        <object type="image/svg+xml" data="assets/svg/logo/logo-light.svg" class="logo-object footer__logo-object">
+    <section id="work-scheme__section" class="work-scheme">
+      <div class="wrapper work-scheme__wrapper">
+        <h2 class="section__title">Схема работы</h2>
+        <p>Активная связь и поддержка на каждом этапе работы</p>
+        <object
+          type="image/svg+xml"
+          data="assets/svg/scheme.svg"
+          class="scheme-object"
+        >
           Your browser does not support SVG
         </object>
-      </a>
-      <div class="layout-2-column footer__navigation">
-        <div class="navigation__column first">
-          <ul class="footer__navigation_links">
-            <li><a data-goto=".promo" class="footer__link" href="#">Главная</a></li>
-            <li><a data-goto=".about-us" class="footer__link" href="#">О нас</a></li>
-          </ul>
-        </div>
-        <div class="navigation__column second">
-          <ul class="footer__navigation_links">
-            <li><a data-goto=".work-scheme" class="footer__link" href="#">Схема работы</a></li>
-            <li><a data-goto=".contacts" class="footer__link" href="#">Контакты</a></li>
-          </ul>
+        <object
+          type="image/svg+xml"
+          data="assets/svg/scheme-small.svg"
+          class="scheme-object_small"
+        >
+          Your browser does not support SVG
+        </object>
+      </div>
+    </section>
+
+    <section id="contacts__section" class="contacts">
+      <div class="wrapper contacts__wrapper">
+        <div class="layout-2-column">
+          <div class="contacts__content">
+            <p class="section__title">ТОО Фокс Карго</p>
+            <div class="contacts-info">
+              <p>
+                Адрес: 161300 Казахстан, Туркестанская обл., <br />г. Шымкент,
+                ул. Биназар Батыр 193А
+              </p>
+              <p>
+                тел:
+                <a class="contacts-info__link" href="tel:+77273270007"
+                  >+ 7 727 327 0007</a
+                >
+              </p>
+              <p>
+                моб:
+                <a class="contacts-info__link" href="tel:+77079009392"
+                  >+ 7 707 900 9392</a
+                >
+              </p>
+              <p>
+                email:
+                <a class="contacts-info__link" href="mailto:info@foxcargo.kz"
+                  >info@foxcargo.kz ,</a
+                ><a
+                  class="contacts-info__link"
+                  href="mailto:logistic.specialist@foxcargo.kz"
+                >
+                  logistic.specialist@foxcargo.kz</a
+                >
+              </p>
+            </div>
+            <form action="" method="post">
+              <input
+                class="form__input"
+                type="text"
+                name="name"
+                placeholder="Имя"
+                required
+              />
+              <input
+                class="form__input"
+                type="email"
+                name="email"
+                placeholder="Ваш email"
+                required
+              />
+              <div class="contact-us__button">
+                <button class="button contacts__button" type="submit">
+                  Связаться с нами →
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <iframe
+            class="map"
+            src="https://api.mapbox.com/styles/v1/kanat-juzbayev/cku85gpaf4u9i17s9rjkk6flf.html?title=false&access_token=pk.eyJ1Ijoia2FuYXQtanV6YmF5ZXYiLCJhIjoiY2t1ODQ2cnA2MDRlbDJubXp5dzl6cXpxeiJ9.G6bJAkTgPyPKrQvpon-jzQ&zoomwheel=false#15.94/48.86091/2.3364"
+            title="Monochrome"
+            style="border: none"
+          ></iframe>
         </div>
       </div>
-      <div class="social-media">
-        <a class="social-media__link instagram" href="https://www.instagram.com/" target="_blank"></a>
-        <a class="social-media__link facebook" href="https://www.facebook.com/" target="_blank"></a>
-        <a class="social-media__link twitter" href="http://twitter.com/" target="_blank"></a>
+    </section>
+
+    <footer class="footer">
+      <div class="wrapper footer__wrapper">
+        <a class="logo footer__logo" href="#promo__section">
+          <object
+            type="image/svg+xml"
+            data="assets/svg/logo/logo-light.svg"
+            class="logo-object footer__logo-object"
+          >
+            Your browser does not support SVG
+          </object>
+        </a>
+        <div class="layout-2-column footer__navigation">
+          <div class="navigation__column first">
+            <ul class="footer__navigation_links">
+              <li>
+                <a data-goto=".promo" class="footer__link" href="#">Главная</a>
+              </li>
+              <li>
+                <a data-goto=".about-us" class="footer__link" href="#">О нас</a>
+              </li>
+            </ul>
+          </div>
+          <div class="navigation__column second">
+            <ul class="footer__navigation_links">
+              <li>
+                <a data-goto=".work-scheme" class="footer__link" href="#"
+                  >Схема работы</a
+                >
+              </li>
+              <li>
+                <a data-goto=".contacts" class="footer__link" href="#"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="social-media">
+          <a
+            class="social-media__link instagram"
+            href="https://www.instagram.com/"
+            target="_blank"
+          ></a>
+          <a
+            class="social-media__link facebook"
+            href="https://www.facebook.com/"
+            target="_blank"
+          ></a>
+          <a
+            class="social-media__link twitter"
+            href="http://twitter.com/"
+            target="_blank"
+          ></a>
+        </div>
       </div>
-    </div>
-    <div class="wrapper creates__wrapper">
-      <p class="creates">© 2022</p>
-      <a class="creator" target="_blank" href="#"><p class="creates">Masahiro co</p></a>
-    </div>
-  </footer>
+      <div class="wrapper creates__wrapper">
+        <p class="creates">© <span id="year"></span></p>
+        <a class="creator" target="_blank" href="#"
+          ><p class="creates">Masahiro co</p></a
+        >
+      </div>
+    </footer>
 
-  <script type="module" src="js/main.js"></script>
-
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>
